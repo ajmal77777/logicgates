@@ -1,0 +1,22 @@
+module Gate_1 (
+   input wire a,  //Input A
+	input wire b,  //Input B
+	output wire and out,
+	output wire or out,
+	output wire not out,  // only on A
+	output wire nand out,
+	output wire nor out,
+	output wire xor out,
+	output wire xnor out
+);
+
+   assign and out = a & b;  //AND gate
+	assign or out = a | b;  //OR gate
+	assign not out = ~a;  //NOT gate (on input A)
+	assign nand out = ~(a & b);  //NAND gate
+	assign nor out = ~(a | b);  //NOR gate
+	assign xor out = a ^ b;  //XOR gate
+	assign xnor out = ~(a ^ b);  //XNOR gate
+	
+endmodule
+	
